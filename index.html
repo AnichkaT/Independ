@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <Style>
+        a{
+            color: purple;
+            text-decoration: none;
+        }
+        body{
+            background-color: lightblue;
+            text-align: center;
+            color: green;            
+        }
+
+        button {
+            border: double;
+            color: purple;
+            padding: 16px 32px;
+            background-color: lightblue ;
+            cursor: pointer;
+        }
+        #t01 {
+            width: 100%;
+            background-color: #f1f1c1;
+            border: 1px solid black;
+        }
+
+
+    </Style>
+
+
+
+
 </head>
 <body>
-    
+    <h1 id="C1">Що таке HTML?</h1>
+
+    <h3>Мій перший заголовок</h3>
+    <p>Мій перший параграф.</p>
+
+    <h1 id="C2">HTML Параграфи</h1>
+
+    <p>Це параграф.
+    <p>Це інший параграф.
+
+    <h1>HTML Посилання</h1>
+    <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0">Посилання &#128516;</a>
+
+    <p><a href="#C1">Перейти до розділу 1</a></p>
+    <p><a href="#C2">Перейти до розділу 2</a></p>
+
+    <h1>HTML Зображення</h1>
+    <img src="https://img.freepik.com/free-photo/beautiful-blooming-flowers-spring-season_23-2150790288.jpg" usemap="#flower" alt="Flowers" width="400" height="400">
+    <map name="flower">
+        <area shape="circle" coords="200,200,100" alt="Flower" onclick="myFunction('на квіти')">
+    </map>
+
+
+    <h1>HTML Таблиці</h1>
+    <table id="t01">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Katy</td>
+          <td>Smith</td>
+          <td>94</td>
+        </tr>
+        <tr>
+            <td>Mery</td>
+            <td>Smith</td>
+            <td>94</td>
+        </tr>
+      </table>
+
+
+    <br/><button onclick="myFunction('на кнопку')"> Кнопка </button>
+
+    <h1>HTML Списки</h1>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <h1>HTML Форми</h1>
+
+    <form onclick="myFunction('на кнопку Надіслати')">
+        Ім'я:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Прізвище:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Надіслати">
+      </form>
+
+    <script>
+        function myFunction(sentence) {
+          alert("Ви тільки що натисли " + sentence);
+        }
+    </script>
+
 </body>
 </html>
